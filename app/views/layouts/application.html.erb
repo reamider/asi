@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sprzedane karnety</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+ <body>
+    <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsable">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand"><%= t("Sprzedane karnety") %></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapsable">
+      <ul class="nav navbar-nav foo" id="menu">
+        <li class="active"><a href="/books"><%= t("Lista sprzedanych karnetów") %></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" align="right">
+        <li>
+        <% if I18n.locale == I18n.default_locale %>
+          <%= link_to "Polski", :locale=>'en'%>
+        <% else %>
+          <%= link_to "Polski", :locale=>'pl'%>
+        <%end%>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <%= yield %>
+  </body>
+</html>

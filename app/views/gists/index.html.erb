@@ -1,0 +1,42 @@
+<%- model_class = Gist -%>
+<div class="page-header">
+  <h1>Sprzedane bilety</h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name("Numer klienta") %></th>
+      <th><%= model_class.human_attribute_name("Imie") %></th>
+      <th><%= model_class.human_attribute_name("Nazwisko") %></th>
+      <th><%= model_class.human_attribute_name("Rodzaj biletu") %></th>
+      <th><%= model_class.human_attribute_name("Data zakupu") %></th>
+      <th><%=t '.actions', default: t("Działania") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @gists.each do |gist| %>
+      <tr>
+        <td><%= gist.id %></td>
+          <td><%= gist.src %></td>
+          <td><%= gist.lang %></td>
+          <td><%= gist.desc %></td>
+        <td><%=l gist.created_at, format: :long %></td>
+        <td>
+          <%= link_to gist_path(gist), class: 'btn btn-xs', title: "Pokaż klienta" do %>
+            <%= glyph 'info-sign' %>
+          <%- end -%>
+          <%= link_to edit_gist_path(gist), class: 'btn btn-xs', title: "Edytuj Klienta" do %>
+            <%= glyph 'pencil' %>
+          <%- end -%>
+          <%= link_to gist_path(gist), method: :delete, data: { confirm: t('.confirm', default: t("helpers.links.confirm", default: 'Are you sure?')) }, class: 'btn btn-xs', title: "Usuń klienta" do %>
+            <%= glyph 'remove' %>
+          <%- end -%>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', default: t("Dodaj klienta")),
+            new_gist_path,
+            class: 'btn btn-primary' %>
