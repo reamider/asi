@@ -1,12 +1,10 @@
-### Sebastian Matyjas
-
 1. Zaliczenie:
- - [ ] [ASI](asi)
- - [ ] [link do wdrożonej na zewnętrznym serwerze aplikacji](/)
+ - [x] [asi](asi)
+ - [x] [link do wdrożonej na zewnętrznym serwerze aplikacji]()
 1. Egzamin:
  - [ ] [nazwa aplikacji](egzamin)
- - [ ] [link do wdrożonej na zewnętrznym serwerze aplikacji](/)
-
+ - [ ] [link do wdrożonej na zewnętrznym serwerze aplikacji]()
+ 
 * Ruby 2.2.4
 * Rails 
 * SQLite
