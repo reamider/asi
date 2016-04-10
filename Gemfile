@@ -35,11 +35,12 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-sass-extras', '~> 0.0.6'
 gem 'turbolinks'
 gem 'coffee-script-source', '1.8.0'
-gem 'faker'
+gem 'faker', '~> 1.6', '>= 1.6.3'
 gem 'omniauth-github'
 gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
+gem 'bootstrap-will_paginate', '0.0.10'
 
 group :development do
   # gem 'quiet_assets', '~> 1.1.0' # see https://github.com/evrone/quiet_assets

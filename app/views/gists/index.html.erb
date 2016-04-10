@@ -36,7 +36,11 @@
     <% end %>
   </tbody>
 </table>
-
+<center>
 <%= link_to t('.new', default: t("Dodaj klienta")),
             new_gist_path,
             class: 'btn btn-primary' %>
+</center>
+<div class="text-center">
+     <%= will_paginate @gists, renderer: BootstrapPagination::Rails %>
+</div>
