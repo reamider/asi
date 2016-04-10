@@ -33,12 +33,11 @@ gem 'execjs'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-sass-extras', '~> 0.0.6'
-gem 'coffee-rails', '~> 4.1.0'
 gem 'turbolinks'
 gem 'coffee-script-source', '1.8.0'
 gem 'faker'
 gem 'omniauth-github'
-
+gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 

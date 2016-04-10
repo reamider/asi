@@ -22,15 +22,16 @@
       <ul class="nav navbar-nav foo" id="menu">
         <li class="active"><a href=""><%= t("Lista sprzedanych biletów") %></a></li>
       </ul>
+	  <center>
       <ul class="nav navbar-nav navbar-right" align="right">
-        <li>
-        <% if I18n.locale == I18n.default_locale %>
-          <%= link_to "Polski", :locale=>'en'%>
-        <% else %>
-          <%= link_to "Polski", :locale=>'pl'%>
-        <%end%>
+			<% if user_signed_in? %>
+				<li><%= link_to "Wyloguj", destroy_user_session_path, method: :delete %></li>
+			<% else %>
+				<li><%= link_to "Zarejestruj", new_user_registration_path %></li>
+			<li><%= link_to "Zaloguj", new_user_session_path %></li>   
+			<% end %>
       </li>
-      </ul>
+	  </ul>
     </div>
   </div>
 </nav>
