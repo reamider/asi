@@ -1,12 +1,12 @@
 1. Zaliczenie:
- - [x] [asi](asi)
+ - [x] [Kino](app)
  - [x] [link do wdrożonej na zewnętrznym serwerze aplikacji]()
 1. Egzamin:
  - [ ] [nazwa aplikacji](egzamin)
  - [ ] [link do wdrożonej na zewnętrznym serwerze aplikacji]()
  
 * Ruby 2.2.4
-* Rails 
+* Rails 4.2
 * SQLite
 
 Aplikacja pozwala gromadzić informacje na temat wykupionych biletów wraz z ich datą zakupu, rodzajem i danymi klienta.
