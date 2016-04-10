@@ -1,28 +1,14 @@
-== README
+### Sebastian Matyjas
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Zaliczenie:
+ - [ ] [ASI](asi)
+ - [ ] [link do wdrożonej na zewnętrznym serwerze aplikacji](/)
+1. Egzamin:
+ - [ ] [nazwa aplikacji](egzamin)
+ - [ ] [link do wdrożonej na zewnętrznym serwerze aplikacji](/)
 
-Things you may want to cover:
+* Ruby 2.2.4
+* Rails 
+* SQLite
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Aplikacja pozwala gromadzić informacje na temat wykupionych biletów wraz z ich datą zakupu, rodzajem i danymi klienta.
