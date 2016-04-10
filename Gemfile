@@ -36,6 +36,8 @@ gem 'bootstrap-sass-extras', '~> 0.0.6'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'turbolinks'
 gem 'coffee-script-source', '1.8.0'
+gem 'faker'
+gem 'omniauth-github'
 
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'

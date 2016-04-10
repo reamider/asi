@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sprzedane karnety</title>
+  <title>Sprzedane bilety</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -16,11 +16,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand"><%= t("Sprzedane karnety") %></a>
+      <a href="/" class="navbar-brand"><%= t("Sprzedane bilety") %></a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapsable">
       <ul class="nav navbar-nav foo" id="menu">
-        <li class="active"><a href=""><%= t("Lista sprzedanych karnetów") %></a></li>
+        <li class="active"><a href=""><%= t("Lista sprzedanych biletów") %></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right" align="right">
         <li>
