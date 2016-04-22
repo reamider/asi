@@ -2,9 +2,11 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.6'
+gem 'rails', '5.0.0.beta1.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', group: :development
+gem 'pg', '0.18.1', group: :production
+gem 'rails_12factor', group: :production
 # Use SCSS for stylesheets
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -35,12 +37,13 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap-sass-extras', '~> 0.0.6'
 gem 'turbolinks'
 gem 'coffee-script-source', '1.8.0'
-gem 'faker', '~> 1.6', '>= 1.6.3'
+gem 'faker'
 gem 'omniauth-github'
-gem 'devise', '~> 3.5', '>= 3.5.6'
+gem 'devise', github: 'plataformatec/devise', branch: 'master'
 gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
-gem 'bootstrap-will_paginate', '0.0.10'
+
+gem 'polish'
 
 group :development do
   # gem 'quiet_assets', '~> 1.1.0' # see https://github.com/evrone/quiet_assets
